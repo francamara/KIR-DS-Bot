@@ -1,0 +1,24 @@
+{
+  "name": "phoenix-ds-bot",
+  "version": "1.0.0",
+  "description": "Bot made for me and my friends to listen music on discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/francamara/Phoenix-for-Music-DS-Bot.git"
+  },
+  "keywords": [
+    "Music",
+    "Bot",
+    "Discord"
+  ],
+  "author": "Francamaradev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/francamara/Phoenix-for-Music-DS-Bot/issues"
+  },
+  "homepage": "https://github.com/francamara/Phoenix-for-Music-DS-Bot#readme"
+}
