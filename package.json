@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/francamara/Phoenix-for-Music-DS-Bot/issues"
   },
-  "homepage": "https://github.com/francamara/Phoenix-for-Music-DS-Bot#readme"
+  "homepage": "https://github.com/francamara/Phoenix-for-Music-DS-Bot#readme",
+  "dependencies": {
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
 }
