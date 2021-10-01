@@ -1,10 +1,11 @@
 {
-  "name": "phoenix-ds-bot",
+  "name": "kir-ds-bot",
   "version": "1.0.0",
   "description": "Bot made for me and my friends to listen music on discord",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon run index.js",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,15 @@
   },
   "homepage": "https://github.com/francamara/Phoenix-for-Music-DS-Bot#readme",
   "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "colors": "^1.4.0",
+    "discord-api-types": "^0.23.1",
     "discord.js": "^13.1.0",
     "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
-  }
+  },
+  "type": "module"
 }
