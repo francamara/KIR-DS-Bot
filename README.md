@@ -1,4 +1,4 @@
-# Kit It Rolling [KIR] Discord Bot
+# Keep It Rolling [KIR] Discord Bot
 
 ## Node Version
 
