@@ -26,7 +26,7 @@
   "homepage": "https://github.com/francamara/Phoenix-for-Music-DS-Bot#readme",
   "dependencies": {
     "@discordjs/builders": "^0.6.0",
-    "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/rest": "0.1.0-canary.0",
     "colors": "^1.4.0",
     "discord-api-types": "^0.23.1",
     "discord.js": "^13.1.0",
@@ -37,6 +37,5 @@
   },
   "engines": {
     "node": "16.x"
-  },
-  "type": "module"
+  }
 }
