@@ -5,7 +5,7 @@ module.exports = {
     .setName('chicha')
     .setDescription('Muy temprano pero que rica chichita'),
   async execute(interaction) {
-    await interaction.reply(
+    interaction.reply(
       'Nunca es tarde para una _chichita_ \n https://open.spotify.com/playlist/0apSD1XZsZ86s81wpHeuYt?si=c197c462686d4192'
     )
   },
