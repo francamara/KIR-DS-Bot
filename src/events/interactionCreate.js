@@ -21,10 +21,10 @@ module.exports = {
       console.error(error)
       await interaction.reply({
         content:
-          'There was an error while executing this command! (If problem persists, please contact @francamaraph#9089',
-        ephemeral: true,
+          'There was an error while executing this command! (If problem persists, please contact @francamaraph#9089)',
+        // ephemeral: true,
       })
-      console.log(colors.red(`Error executing "/${command.data.name}"`))
+      console.log(colors.red(`ERROR EXECUTING "/${command.data.name}"`))
     }
   },
 }
