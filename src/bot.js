@@ -3,16 +3,16 @@ const colors = require('colors')
 const fs = require('fs')
 const dotenv = require('dotenv').config()
 
-const token = process.env.APP_TOKEN
-console.clear()
-// const guildId = process.env.GUILD_ID
-// const intents = new Intents(32767)
+console.log(
+  colors.red(
+    '-------------------------------------------------------------------------'
+  )
+)
 
+const token = process.env.APP_TOKEN
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] })
 
 client.commands = new Collection()
-
-// minuto 5 https://www.youtube.com/watch?v=HNH4V6Dhw6s
 
 const functions = fs
   .readdirSync('./src/functions')
