@@ -10,7 +10,9 @@ console.log(
 )
 
 const token = process.env.APP_TOKEN
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] })
+const client = new Client({
+  intents: [Intents.FLAGS.GUILDS, 'GUILD_VOICE_STATES'],
+})
 
 client.commands = new Collection()
 
