@@ -4,11 +4,17 @@ const music = require('@koenie06/discord.js-music')
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('play')
-    .setDescription('Plays a song in the voice channel'),
+    .setDescription('Plays a song in the voice channel')
+    .addStringOption((string) =>
+      string
+        .setName('song')
+        .setDescription('Play a given song name/URL in the voice channel')
+        .setRequired(true)
+    ),
 
   async execute(interaction) {
     /* This will get the song that has been provided */
-    const song = '../../data/popCornAndino.mp4'
+    const song = interaction.options.getString('song')
 
     /* Gets the voice channel where the member is in. If the member isn't in any, return. */
     const voiceChannel = interaction.member.voice.channel
@@ -18,11 +24,15 @@ module.exports = {
         ephemeral: true,
       })
 
-    /* Get more info about how the play command works at https://npmjs.com/package/@koenie06/discord.js-music#play */
+    /* Get more info about how the play command works at https://npmjs.com/ package/@koenie06/discord.js-music#play */
     music.play({
       interaction: interaction,
       channel: voiceChannel,
       song: song,
     })
+
+    return interaction.reply(
+      `Playing ${song} requested by ${interaction.user.tag}`
+    )
   },
 }
